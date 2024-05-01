@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="749.0" style="-fx-background-color: linear-gradient(to bottom, #FFFFFF,#173873);" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.SignUpController">
+   <children>
+      <Label layoutX="101.0" layoutY="199.0" text="Sign up new account" textFill="#1e1838">
+         <font>
+            <Font name="Juice ITC" size="43.0" />
+         </font>
+      </Label>
+      <Button fx:id="signup" layoutX="314.0" layoutY="517.0" mnemonicParsing="false" onAction="#createAccountButtonOnClick" prefHeight="40.0" prefWidth="336.0" text="Create New Account" textFill="#0030ff">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="goback" layoutX="618.0" layoutY="171.0" mnemonicParsing="false" onAction="#goBackButtonOnClick" prefHeight="27.0" prefWidth="96.0" text="Go Back" />
+      <HBox layoutX="286.0" layoutY="291.0" prefHeight="216.0" prefWidth="364.0">
+         <children>
+            <VBox prefHeight="216.0" prefWidth="197.0">
+               <children>
+                  <Label prefHeight="23.0" prefWidth="226.0" text="Full Name">
+                     <font>
+                        <Font name="Constantia Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="23.0" prefWidth="150.0" text="User Name">
+                     <font>
+                        <Font name="Constantia Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="26.0" prefWidth="175.0" text="Phone Number">
+                     <font>
+                        <Font name="Constantia Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="23.0" prefWidth="144.0" text="Date Of Birth">
+                     <font>
+                        <Font name="Constantia Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="23.0" prefWidth="171.0" text="New Password">
+                     <font>
+                        <Font name="Constantia Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="26.0" prefWidth="214.0" text="Confirm Password">
+                     <font>
+                        <Font name="Constantia Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="8.0" prefWidth="167.0" text="User Type">
+                     <font>
+                        <Font name="Constantia Bold" size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="192.0" prefWidth="150.0">
+               <children>
+                  <TextField fx:id="newNameTextField" />
+                  <TextField fx:id="newUserNameTextField" />
+                  <TextField fx:id="newUserPhoneNumberTextField" />
+                  <DatePicker fx:id="newUserDob" prefHeight="25.0" prefWidth="149.0" />
+                  <TextField fx:id="newPasswordTextField" />
+                  <TextField fx:id="confirmPasswordTextField" />
+                  <ComboBox fx:id="userTypeComboBox" prefHeight="27.0" prefWidth="510.0" promptText="Register as:" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Text layoutX="40.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Congratulations on joining our aircraft carrier!" wrappingWidth="694.1366195678711">
+         <font>
+            <Font name="Georgia" size="33.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="120.0" fitWidth="167.0" layoutX="92.0" layoutY="291.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/images.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="81.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USS Carl Vinsom">
+         <font>
+            <Font name="Haettenschweiler" size="34.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

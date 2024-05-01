@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="750.0" style="-fx-background-color: linear-gradient(to bottom, #FFFFFF,#173873);" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.LoginScController">
+   <children>
+      <TextField fx:id="userIdTextField" layoutX="341.0" layoutY="325.0" prefHeight="39.0" prefWidth="338.0" promptText="Enter Your ID">
+         <effect>
+            <ColorAdjust />
+         </effect>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="passwordTextField" layoutX="341.0" layoutY="379.0" opacity="0.65" prefHeight="39.0" prefWidth="338.0" promptText="Enter Your Password">
+         <effect>
+            <ColorAdjust />
+         </effect>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextField>
+      <ComboBox fx:id="userTypeComboBox" layoutX="342.0" layoutY="273.0" prefHeight="39.0" prefWidth="338.0" promptText="Select User Type">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ComboBox>
+      <Button fx:id="login" layoutX="342.0" layoutY="478.0" mnemonicParsing="false" onAction="#loginButtonOnClick" opacity="0.75" prefHeight="39.0" prefWidth="338.0" text="Login" textFill="#110c71">
+         <font>
+            <Font name="LiSu" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="signupButton" layoutX="38.0" layoutY="544.0" mnemonicParsing="false" onAction="#signUpButtonOnClick" opacity="0.75" prefHeight="39.0" prefWidth="170.0" text="Sign Up" textFill="#110c71">
+         <font>
+            <Font name="LiSu" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="351.0" layoutY="136.0" prefHeight="87.0" prefWidth="338.0" text="USS Carl Vinson">
+         <font>
+            <Font name="Gill Sans MT Bold" size="41.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Label layoutX="66.0" layoutY="517.0" text="New to our platform?" textFill="#fff5f5" />
+      <Button fx:id="aboutUsSc" layoutX="40.0" layoutY="598.0" mnemonicParsing="false" onAction="#AboutUSScOnCLk" prefHeight="26.0" prefWidth="170.0" text="About Us">
+         <font>
+            <Font name="MS Reference Specialty" size="15.0" />
+         </font>
+      </Button>
+      <Text fill="#514646" fontSmoothingType="LCD" layoutX="94.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome              to:" wrappingWidth="204.06336975097656">
+         <font>
+            <Font name="Niagara Solid" size="77.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="299.0" fitWidth="286.0" layoutX="394.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/3Zbc.gif" />
+         </image>
+      </ImageView>
+      <Text fill="#5e5a5a" layoutX="351.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Largest Aircraft carrier in the US">
+         <font>
+            <Font name="Palatino Linotype" size="18.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="282.0" fitWidth="302.0" layoutX="40.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/df0a8mv-ca082a65-50e2-4eb9-b24c-a9968547bccd.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
